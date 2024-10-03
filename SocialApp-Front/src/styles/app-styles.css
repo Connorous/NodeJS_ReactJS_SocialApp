@@ -1,0 +1,903 @@
+section.top-section {
+  background-color: #00bbc1;
+  width: 100%;
+}
+
+h1.top {
+  color: white;
+  margin: 0;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+p.loggedinas {
+  color: white;
+  margin-right: 80%;
+  font-weight: bold;
+  width: 100%;
+}
+
+span.username {
+  color: rgb(0, 60, 86);
+  margin-right: 80%;
+  font-size: larger;
+}
+
+div.flex-container {
+  display: flex;
+  justify-content: space-evenly;
+  padding-left: 5%;
+  padding-right: 5%;
+  gap: 20px;
+}
+
+div.comment {
+  background-color: #ececec;
+  border-radius: 5px;
+  padding: 0.5%;
+  font-size: 20px;
+  border-radius: 15px;
+  outline-style: solid;
+  outline-width: 5px;
+  outline-color: #7495a0;
+  box-shadow: 5px 7px 7px;
+}
+
+button.medium {
+  font-size: small;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  gap: 7px;
+  transition: 0.5s;
+}
+
+button.medium:hover {
+  transition: 0.5s;
+}
+
+button.like {
+  font-size: small;
+  background-color: deepskyblue;
+  color: white;
+  transition: 0.5s;
+  align-items: center;
+  display: flex;
+  gap: 7px;
+}
+
+button.like:hover {
+  font-size: small;
+  background-color: dodgerblue;
+  color: white;
+  transition: 0.5s;
+}
+
+button.unlike {
+  font-size: small;
+  background-color: dodgerblue;
+  color: white;
+  transition: 0.5s;
+  align-items: center;
+  display: flex;
+  gap: 7px;
+}
+
+button.unlike:hover {
+  font-size: small;
+  transition: 0.5s;
+  background-color: white;
+  color: black;
+}
+
+button.edit {
+  font-size: small;
+  background-color: cadetblue;
+  color: white;
+  transition: 0.5s;
+  align-items: center;
+  display: flex;
+  gap: 5px;
+  transition: 0.5s;
+}
+
+button.edit:hover {
+  font-size: small;
+  background-color: darkslategray;
+  color: white;
+  transition: 0.5s;
+}
+
+button.delete {
+  font-size: small;
+  background-color: maroon;
+  color: white;
+  transition: 0.5s;
+  align-items: center;
+  display: flex;
+  gap: 5px;
+  transition: 0.5s;
+}
+
+button.delete:hover {
+  font-size: small;
+  background-color: red;
+  color: white;
+  transition: 0.5s;
+}
+
+div.profile-posts {
+  background-color: #00bbc1;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  border-radius: 15px;
+}
+
+div.post {
+  display: block;
+  flex-shrink: 2;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  gap: 10px;
+  text-align: justify;
+  margin: auto;
+  outline: #005261;
+  outline-width: 20px;
+  outline-style: solid;
+
+  border-radius: 15px;
+  padding-bottom: 0%;
+  font-size: larger;
+  background-color: #ccdee1;
+  box-shadow: 15px 27px 27px;
+}
+
+button.post {
+  margin-right: 80%;
+  font-size: large;
+  transition: 0.5s;
+}
+
+button.edit-profile {
+  transition: 0.5s;
+}
+
+div.post > div > div > input {
+  width: 80%;
+  border-radius: 15px;
+}
+
+div.post > div > div > textarea {
+  width: 80%;
+  border-radius: 15px;
+}
+
+div.post-holder {
+  font-size: larger;
+}
+
+div.post-holder > h4 {
+  background-color: white;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  border-radius: 10px;
+  font-size: xx-large;
+}
+
+div.post-holder > p {
+  background-color: white;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  border-radius: 10px;
+}
+
+div.post-holder > div > button {
+  font-size: large;
+}
+
+div.post-holder > div > div > button {
+  font-size: large;
+}
+
+div.post-holder > div > button:hover {
+  font-size: large;
+}
+
+div.post-holder > div > div > button:hover {
+  font-size: large;
+}
+
+div.top-bar {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20%;
+  margin: auto;
+  color: white;
+  padding-left: 10%;
+  padding-right: 10%;
+  flex-shrink: 1;
+}
+
+div.top-bar-right {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  gap: 3%;
+  margin: auto;
+  align-items: center;
+}
+
+div.top-bar-left {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  gap: 3%;
+  margin: auto;
+  align-items: center;
+}
+
+div.contacts-flex-container {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  grid-template-rows: auto;
+  justify-content: center;
+  gap: 10%;
+
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+div.friends {
+  background-color: #008185;
+  border-radius: 20px;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  width: 100%;
+}
+
+div.friends > h4 {
+  color: white;
+  font-size: x-large;
+}
+
+div.friend {
+  background-color: #f5f5f5;
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+  padding-bottom: 1%;
+  padding-top: 1%;
+  border-radius: 15px;
+}
+
+div.friend > a {
+  color: black;
+  font-size: xx-large;
+}
+
+div.friend > div > button {
+  background-color: #005457;
+  color: white;
+}
+
+div.friend > div > button:hover {
+  background-color: #008185;
+  transition: 0.5s;
+}
+
+div.friendrequests {
+  background-color: #007784;
+  border-radius: 20px;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  width: 100%;
+}
+
+div.friendrequests > h4 {
+  color: white;
+  font-size: x-large;
+}
+
+div.friendrequest {
+  background-color: #f5f5f5;
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+  padding-bottom: 1%;
+  padding-top: 1%;
+  border-radius: 15px;
+}
+
+div.friendrequest > a {
+  color: black;
+  font-size: xx-large;
+}
+
+div.friendrequest > div > button {
+  background-color: #00b0c4;
+  color: white;
+}
+
+div.friendrequest > div > button:hover {
+  background-color: #00e4ff;
+  transition: 0.5s;
+}
+
+button.block-button:hover {
+  background-color: #bc0707;
+  transition: 0.5s;
+}
+
+div.sentfriendrequests {
+  background-color: #007784;
+  border-radius: 20px;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  width: 100%;
+}
+
+div.sentfriendrequests > h4 {
+  color: white;
+  font-size: x-large;
+}
+
+div.sentfriendrequest {
+  background-color: #f5f5f5;
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+  padding-bottom: 1%;
+  padding-top: 1%;
+  border-radius: 15px;
+}
+
+div.sentfriendrequest > a {
+  color: black;
+  font-size: xx-large;
+}
+
+div.sentfriendrequest > div > button {
+  background-color: #5f0606;
+  color: white;
+}
+
+div.sentfriendrequest > div > button:hover {
+  background-color: #bc0707;
+  transition: 0.5s;
+}
+
+div.blockedcontacts {
+  background-color: #464646;
+  border-radius: 20px;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  width: 100%;
+}
+
+div.blockedcontacts > h4 {
+  color: white;
+  font-size: x-large;
+}
+
+div.blockedcontact {
+  background-color: #f5f5f5;
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+  padding-bottom: 1%;
+  padding-top: 1%;
+  border-radius: 15px;
+}
+
+div.blockedcontact > a {
+  color: black;
+  font-size: xx-large;
+}
+
+div.blockedcontact > div > button {
+  background-color: #363636;
+  color: white;
+  transition: 0.5s;
+}
+
+div.blockedcontact > div > button:hover {
+  background-color: #848484;
+  transition: 0.5s;
+}
+
+div.blockedcontact > p {
+  font-weight: 500;
+  color: black;
+  font-size: xx-large;
+}
+
+a.top {
+  font-weight: 500;
+  color: white;
+  text-decoration: inherit;
+}
+
+a.top:hover {
+  color: lightcyan;
+}
+
+.home-item-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: auto;
+  justify-self: center;
+  overflow-y: initial;
+  grid-column-gap: 5%;
+  grid-row-gap: 7%;
+  padding: 5%;
+  width: 50%;
+}
+
+.home {
+  justify-self: center;
+  height: 100%;
+  margin: auto;
+}
+
+div.flex-container-left {
+  display: flex;
+  justify-content: left;
+  padding-left: 150px;
+  padding-right: 150px;
+  gap: 40px;
+  align-items: center;
+  overflow: auto;
+  text-align: left;
+}
+
+div.flex-container-left > button {
+  height: 50%;
+}
+
+div.flex-container-left > div {
+  width: 200%;
+  height: 200%;
+  overflow: visible;
+}
+
+div.flex-container-left > div > textarea {
+  width: 100%;
+  height: 400%;
+  border-radius: 15px;
+}
+
+div.flex-container-btns {
+  display: flex;
+  justify-content: end;
+  gap: 40px;
+}
+
+textarea.editarea {
+  width: 85%;
+  height: 400%;
+  border-radius: 15px;
+  font-size: x-large;
+}
+
+input.publish {
+  width: 23px;
+  height: 23px;
+}
+
+div.post-like {
+  font-size: small;
+  background-color: white;
+  width: 25%;
+  border-radius: 5px;
+  outline: solid;
+  outline-width: 2px;
+  outline-color: #d7d7d7;
+}
+
+div.comment-like {
+  font-size: small;
+  background-color: white;
+  width: 50%;
+  border-radius: 5px;
+  width: 25%;
+  outline: solid;
+  outline-width: 2px;
+  outline-color: #d7d7d7;
+}
+
+div.message-like {
+  font-size: small;
+  background-color: white;
+  width: 50%;
+  border-radius: 5px;
+  width: 25%;
+  color: black;
+  outline: solid;
+  outline-width: 2px;
+  outline-color: #4a4a4a;
+}
+
+div.messages {
+  width: 100%;
+  background-color: #00bbc1;
+  border-radius: 20px;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  box-shadow: 3px 5px 5px;
+}
+
+div.messages > h1 {
+  color: white;
+}
+
+div.message {
+  background-color: white;
+  border-radius: 15px;
+  width: 100%;
+  text-align: center;
+}
+
+div.received-message {
+  background-color: white;
+  color: black;
+  text-align: left;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  border-radius: 20px;
+  width: 90%;
+}
+
+div.sent-message {
+  background-color: #00686c;
+  color: white;
+  text-align: left;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  border-radius: 20px;
+  width: 90%;
+}
+
+div.message-input {
+  display: grid;
+  grid-template-columns: 80% 5%;
+  grid-template-rows: auto;
+  gap: 10%;
+
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 4%;
+  padding-right: 4%;
+  border-radius: 15px;
+  align-items: center;
+}
+
+div.message-input-inner {
+  display: flex;
+  width: 100%;
+  gap: 2.5%;
+  align-items: center;
+}
+
+div.message-input-inner > textarea {
+  width: 100%;
+  border-radius: 15px;
+  background-color: #003c3e;
+  color: white;
+  font-size: x-large;
+}
+
+div.message-input > button {
+  font-size: 15px;
+}
+
+div.message-input-inner > button {
+  height: 50%;
+  font-size: 15px;
+}
+
+div.message-input-inner > textarea::placeholder {
+  color: white;
+}
+
+div.message-flex-container {
+  display: grid;
+  grid-template-columns: auto 70%;
+  grid-template-rows: auto;
+  justify-content: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  gap: 5%;
+}
+
+div.message-input-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  justify-content: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  gap: 5%;
+}
+
+h6.date {
+  font-size: x-small;
+  text-align: left;
+}
+
+p.message-text {
+  font-size: xx-large;
+}
+
+div.edit-message > textarea {
+  height: 200px;
+  border-radius: 15px;
+}
+
+div.search-users {
+  width: 100%;
+}
+
+div.search-users > input {
+  width: 60%;
+  height: 100%;
+  font-size: 30px;
+  border-radius: 15px;
+}
+
+div.user-search {
+  width: 80%;
+  border-radius: 15px;
+  margin: auto;
+  outline: solid;
+  outline-width: 5px;
+}
+
+p.search-results {
+  font-size: xx-large;
+}
+
+div.user-searchresult {
+  background-color: #005457;
+  border-radius: 15px;
+  max-width: 80%;
+  font-size: larger;
+  text-align: center;
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  align-items: center;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+}
+
+div.user-searchresult > a {
+  font-size: xx-large;
+  color: white;
+}
+
+div.user-searchresult > div > button {
+  font-size: medium;
+}
+
+div.edit-profile {
+  display: block;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  background-color: #e9f2f3;
+  border-radius: 15px;
+  margin: auto;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+div.edit-profile > textarea {
+  width: 80%;
+  font-size: larger;
+  border-radius: 15px;
+}
+
+textarea {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+div.profile {
+  background-color: #e9f2f3;
+  margin: auto;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  border-radius: 15px;
+}
+
+div.profile > div > p {
+  background-color: white;
+  margin: auto;
+  text-align: start;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  border-radius: 15px;
+  font-size: larger;
+}
+
+div.edit-post {
+  font-size: large;
+
+  justify-content: space-between;
+  padding-left: 5%;
+  padding-right: 5%;
+  align-items: center;
+  overflow: auto;
+  text-align: left;
+  background-color: #ccdee1;
+}
+
+div.edit-post > h6 {
+  font-size: normal;
+}
+
+div.edit-post > input {
+  font-size: large;
+  border-radius: 15px;
+}
+
+div.edit-post > textarea {
+  font-size: large;
+  border-radius: 15px;
+}
+
+div.new-post {
+  font-size: large;
+  display: grid;
+  grid-template-columns: 80% auto;
+  grid-template-rows: auto;
+  justify-content: space-between;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  gap: 40px;
+  align-items: center;
+  overflow: auto;
+  text-align: left;
+  background-color: #ccdee1;
+  border-radius: 15px;
+  outline-style: solid;
+  outline-width: 20px;
+}
+
+div.new-post > div > input {
+  width: 100%;
+  border-radius: 15px;
+  font-size: large;
+}
+
+div.new-post > div > textarea {
+  border-radius: 15px;
+  width: 100%;
+  font-size: large;
+}
+
+h1.post-title {
+  color: white;
+  font-size: 70px;
+}
+
+img.button-icon {
+  height: 30px;
+}
+
+img.button-icon-small {
+  height: 15px;
+}
+
+div.new-comment {
+  font-size: large;
+  display: grid;
+  grid-template-columns: 80% auto;
+  grid-template-rows: auto;
+  justify-content: space-between;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  gap: 40px;
+  align-items: center;
+  overflow: auto;
+  text-align: left;
+  background-color: #e9e9e9;
+  border-radius: 15px;
+  outline-style: solid;
+  outline-width: 5px;
+  outline-color: #7495a0;
+}
+
+div.new-comment > div > input {
+  width: 100%;
+  border-radius: 15px;
+  font-size: large;
+}
+
+div.new-comment > div > textarea {
+  width: 100%;
+  border-radius: 15px;
+  font-size: large;
+}
+
+div.new-comment > div > div > button {
+  font-size: normal;
+}
+
+div.edit-comment {
+  background-color: #ececec;
+  border-radius: 5px;
+  padding: 0.5%;
+  font-size: 20px;
+  padding-left: 5%;
+  padding-right: 5%;
+  border-radius: 15px;
+  outline-style: solid;
+  outline-width: 5px;
+  outline-color: #7495a0;
+  align-items: center;
+  overflow: auto;
+  text-align: left;
+  box-shadow: 5px 7px 7px;
+}
+
+div.edit-comment > div > h6 {
+  font-size: normal;
+}
+
+div.edit-comment > div > textarea {
+  font-size: large;
+  border-radius: 15px;
+}
+
+div.signin-grid {
+  display: grid;
+  grid-template-columns: auto 40%;
+  grid-template-rows: auto;
+  justify-content: center;
+  gap: 1%;
+  margin: auto;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: x-large;
+}
+
+div.signin-grid > input {
+  border-radius: 15px;
+  font-size: x-large;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-right: 1%;
+  padding-left: 1%;
+}

@@ -1,0 +1,113 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+  previewFeatures = ["fullTextSearch", "fullTextIndex"]
+}
+
+model User {
+  id        Int      @id @default(autoincrement())
+  dateCreated DateTime @default(now())
+  username     String   @unique
+  email     String   @unique
+  password  String
+  posts Post[] @relation("owner")
+  profilePosts Post[] @relation("pageOwner")
+  comments Comment[]
+  user1 Relationship[] @relation("user1")
+  user2 Relationship[] @relation("user2")
+  requestingUser Relationship[] @relation("requestingUser")
+  sender Message[] @relation("sender")
+  receiver Message[] @relation("receiver")
+  postLikes Likepost[]
+  commentLikes Likecomment[]
+  messageLikes Likemessage[]
+  profileInfo String @default("")
+}
+
+model Relationship {
+  id  Int @id @default(autoincrement())
+  user1 User @relation("user1", fields: [user1Id], references: [id])
+  user1Id Int
+  user2 User @relation("user2", fields: [user2Id], references: [id])
+  user2Id Int
+  requestingUser User @relation("requestingUser", fields: [requestingUserId], references: [id])
+  requestingUserId Int 
+  pending Boolean
+  accepted Boolean
+  blockeduser1 Boolean ?
+  blockeduser2 Boolean ?
+}
+
+model Post {
+  id  Int @id @default(autoincrement())
+  dateCreated DateTime @default(now())
+  title String 
+  content String
+  owner User @relation("owner", fields: [ownerId], references: [id])
+  ownerId Int 
+  pageOwner User @relation("pageOwner", fields: [pageOwnerId], references: [id])
+  pageOwnerId Int
+  comments Comment[]
+  likes Likepost[]
+}
+
+model Comment {
+  id  Int @id @default(autoincrement())
+  dateCreated DateTime @default(now())
+  content String 
+  post Post @relation(fields: [postId], references: [id])
+  postId Int 
+  owner User @relation(fields: [ownerId], references: [id])
+  ownerId Int 
+  likes Likecomment[]
+}
+
+
+model Message {
+  id  Int @id @default(autoincrement())
+  dateCreated DateTime @default(now())
+  content String 
+  sender User @relation("sender", fields: [senderId], references: [id])
+  senderId Int
+  receiver User @relation("receiver", fields: [receiverId], references: [id])
+  receiverId Int
+  likes Likemessage[]
+}
+
+
+model Likepost {
+  id  Int @id @default(autoincrement())
+  liker User @relation(fields: [likerId], references: [id])
+  likerId Int 
+  post Post @relation(fields: [postId], references: [id])
+  postId Int 
+}
+
+
+
+model Likecomment {
+  id  Int @id @default(autoincrement())
+  liker User @relation(fields: [likerId], references: [id])
+  likerId Int 
+  comment Comment @relation(fields: [commentId], references: [id])
+  commentId Int 
+}
+
+
+model Likemessage {
+  id  Int @id @default(autoincrement())
+  liker User @relation(fields: [likerId], references: [id])
+  likerId Int 
+  message Message @relation(fields: [messageId], references: [id])
+  messageId Int 
+}
